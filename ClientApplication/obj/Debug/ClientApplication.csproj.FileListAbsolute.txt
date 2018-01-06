@@ -1,0 +1,15 @@
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\ClientApplication\bin\ClientApplication.dll.config
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\ClientApplication\bin\ClientApplication.dll
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\ClientApplication\bin\ClientApplication.pdb
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\ClientApplication\obj\Debug\ClientApplication.dll
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\ClientApplication\obj\Debug\ClientApplication.pdb
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\ClientApplication\obj\Debug\ClientApplication.csprojResolveAssemblyReference.cache
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\ClientApplication\bin\Affecto.AngularJS.TypeScript.Base.dll
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\ClientApplication\bin\Antlr3.Runtime.dll
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\ClientApplication\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\ClientApplication\bin\Newtonsoft.Json.dll
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\ClientApplication\bin\System.Web.Optimization.dll
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\ClientApplication\bin\WebGrease.dll
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\ClientApplication\bin\Antlr3.Runtime.pdb
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\ClientApplication\bin\Newtonsoft.Json.xml
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\ClientApplication\bin\System.Web.Optimization.xml

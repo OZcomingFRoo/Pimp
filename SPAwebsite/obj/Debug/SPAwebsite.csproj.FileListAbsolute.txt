@@ -1,0 +1,6 @@
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\SPAwebsite\bin\SPAwebsite.dll.config
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\SPAwebsite\bin\SPAwebsite.dll
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\SPAwebsite\bin\SPAwebsite.pdb
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\SPAwebsite\obj\Debug\SPAwebsite.dll
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\SPAwebsite\obj\Debug\SPAwebsite.pdb
+C:\Users\lonez\Documents\Visual Studio 2015\Projects\Pimp\SPAwebsite\obj\Debug\SPAwebsite.csprojResolveAssemblyReference.cache

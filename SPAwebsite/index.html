@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Pimp Website SPA</title>
+    <base href="/" />
+    
+    <!-- jQuery -->
+    <script src="JScommonLibraries/jquery-3.2.1.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <!-- Latest compiled JavaScript -->
+    <script src="Bootstrap/bootstrap.min.js"></script> 
+    <!-- Models (TS classes) -->
+    <script src="Models/SimpleDate.js"></script>
+    <script src="Models/Report.js"></script>
+    <script src="Models/ReportTag.js"></script>
+    <!-- Angular -->
+    <script src="JScommonLibraries/angularJS.js"></script>
+    <script src="JScommonLibraries/NgRoutes.js"></script>
+    <script src="JScommonLibraries/NgSanitize.js"></script>
+    <!-- Angular module variable -->
+    <script src="globalVar.js"></script>
+    <!-- Dirctives -->
+    <script src="Directives/navDirective.js"></script>
+    <!-- Service -->
+    <script src="Service/WebAPIservice.js"></script>
+    <!-- Filters -->
+    <script src="Filters/dateFilter.js"></script>
+    <!-- Controllers -->
+    <script src="Ctrl/WriteReport.js"></script>
+    <script src="Ctrl/HomeController.js"></script>
+    <script src="Ctrl/ListReportTagController.js"></script>
+    <script src="Ctrl/SearchController.js"></script>
+    <script src="Ctrl/ReportViewController.js"></script>
+    <script src="Ctrl/EditReportController.js"></script>
+
+    <script src="app.js"></script>
+</head>
+<body ng-app="pimpApp">
+    <pimp-Nav></pimp-Nav>
+    <!-- Content -->
+    <ng-view></ng-view>
+    <footer class="container-fluid">
+        <h2><mark>Memorize your daily activities in the Pimp App !</mark></h2>
+    </footer>
+</body>
+</html>

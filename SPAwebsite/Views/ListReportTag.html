@@ -1,0 +1,39 @@
+﻿<!-- div form containing the input for filtering-->
+<div>
+    <div class="container">
+        <h2>Report Tag List</h2>
+        <p>Choose one of the Report Tags to view the report</p>
+        <div class="form-inline">
+            <div class="form-group">
+                <label for="year">Year:</label>
+                <input ng-model="Year" type="number" class="form-control" id="year">
+            </div>
+            <div class="form-group">
+                <label for="month">Month:</label>
+                <input max="12" min="1" ng-model="Month" type="number" class="form-control" id="month">
+            </div>
+            <div class="form-group">
+                <label for="day">Day:</label>
+                <input max="31" min="1" ng-model="Day" type="number" class="form-control" id="day">
+            </div>
+            <button ng-click="Search()" class="btn btn-primary">Search</button>
+        </div>
+    </div>
+</div>
+
+<!-- filter List table containing all hyper links to the Reports-->
+<div class="container">
+    <div class="table-responsive">
+        <table class="table">
+            <caption>Reports</caption>
+            <tbody>
+                <tr ng-repeat="threeItems in List">
+                    <td ng-hide="(threeItems.First == null)"><div class="well"><a href="Report/{{threeItems.First.Id}}">Report #{{threeItems.First.Id}} "{{threeItems.First.Title}}": Report in -{{threeItems.First.date}} </a></div></td>
+                    <td ng-hide="(threeItems.Second == null)"><div class="well"><a href="Report/{{threeItems.Second.Id}}">Report #{{threeItems.Second.Id}} "{{threeItems.Second.Title}}": Report in - {{threeItems.Second.date}} </a></div></td>
+                    <td ng-hide="(threeItems.Third == null)"><div class="well"><a href="Report/{{threeItems.Third.Id}}">Report #{{threeItems.Third.Id}} "{{threeItems.Third.Title}}": Report in - {{threeItems.Third.date}} </a></div></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

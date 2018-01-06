@@ -1,0 +1,70 @@
+﻿<style>
+    p.doc {
+        /*font-size: 1em;*/
+        line-height: 1.25em;
+        margin: 1.25em 0;
+        text-align: justify;
+}
+</style>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Report #{{Report.Id}} {{Report.Title}} <span class="label label-default">Date-{{Report.Date}}</span></h1>
+        </div>
+        <div class="col-md-4">
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>
+                            <button ng-click="EditReport()" class="btn btn-warning btn-lg btn-block">Edit</button>
+                        </th>
+                        <th>
+                            <button data-toggle="modal" data-target="#myModal"
+                                    class="btn btn-danger btn-lg btn-block">Delete</button>
+                        </th>
+                        <th>
+                            <a href="List"  class="btn btn-primary btn-lg btn-block">Back to List</a>
+                        </th>
+                        <th>
+                            <a href="Search" class="btn btn-default btn-lg btn-block">Search Again</a>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+            <div class="col-md-12">
+                <div class="container">
+                    <h2>
+                        Content
+                    </h2>
+                    <p class="doc" id="txt" style="font-size:large; border:solid 1px black; padding:3px">  </p>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button ng-click="DeleteReport()" type="button" class="btn btn-danger" data-dismiss="modal">Yes Delete</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+
+    </div>
+</div>

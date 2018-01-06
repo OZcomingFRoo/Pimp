@@ -1,0 +1,56 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="text-primary">
+                Report Editor Options :
+            </h3>
+        </div>
+        <div class="col-md-6">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th><button ng-hide="bool" ng-click="PostReport()" class="btn btn-primary btn-lg">Create</button></th>
+                        <th><button ng-hide="!bool" ng-click="SaveChanges()" class="btn btn-primary btn-lg">Save</button></th>
+                        <th><a href="List" class="btn btn-default btn-sm">Cancel (Back to List)</a></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <h2>Report ({{Report.Date.Day}}/{{Report.Date.Month}}/{{Report.Date.Year}}) </h2>
+    <div>Change date: </div>
+    <form role="form" class="form-inline">
+        <div class="form-group">
+            <label for="day">
+                Day
+            </label>
+            <input type="number" ng-model="Report.Date.Day" max="31" min="1" class="form-control" id="day" />
+        </div>
+        <div class="form-group">
+            <label for="month">
+                Month
+            </label>
+            <input type="number" ng-model="Report.Date.Month" max="12" min="1" class="form-control" id="month" />
+        </div>
+        <div class="form-group">
+            <label for="year">
+                Year
+            </label>
+            <input type="number" ng-model="Report.Date.Year" min="2010" class="form-control" id="year" />
+        </div>
+    </form>
+    <div>
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input ng-model="Report.Title" maxlength="30" class="form-control" id="title" type="text" placeholder="Title of Report"/>
+        </div>
+        <div class="form-group">
+            <label for="Content">Content:</label>
+            <textarea class="form-control" rows="35" id="comment" ng-model="Report.Content"></textarea>
+        </div>
+    </div>
+</div>
