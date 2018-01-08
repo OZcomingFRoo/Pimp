@@ -28,13 +28,18 @@
             <label for="day">
                 Day
             </label>
-            <input type="number" ng-model="Report.Date.Day" max="31" min="1" class="form-control" id="day" />
+            <select id="day" class="form-group" ng-model="Report.Date.Day">
+                <option ng-repeat="i in days">{{i}}</option>
+            </select>
         </div>
         <div class="form-group">
             <label for="month">
                 Month
             </label>
-            <input type="number" ng-model="Report.Date.Month" max="12" min="1" class="form-control" id="month" />
+            <select id="day" class="form-group" ng-model="Report.Date.Month">
+                <option ng-repeat="i in months">{{i}}</option>
+            </select>
+            <!--<input type="number" ng-model="" max="12" min="1" class="form-control" id="month" />-->
         </div>
         <div class="form-group">
             <label for="year">
@@ -50,7 +55,8 @@
         </div>
         <div class="form-group">
             <label for="Content">Content:</label>
-            <textarea class="form-control" rows="35" id="comment" ng-model="Report.Content"></textarea>
+            <textarea placeholder="Content" class="form-control" rows="35" id="comment" ng-model="Report.Content"></textarea>
         </div>
     </div>
 </div>
+

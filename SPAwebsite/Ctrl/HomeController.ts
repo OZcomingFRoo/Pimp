@@ -1,6 +1,8 @@
 ﻿app.controller('HomeController', function ($scope, $http, apiService)
 {
     $scope.LastReport;
+
+    //Load LastReport data-model with the last repost that was uploaded by user
     apiService.GetRecentReport().then(
         function (response) {
             let date: SimpleDate = new SimpleDate(response.data.Date.Day,

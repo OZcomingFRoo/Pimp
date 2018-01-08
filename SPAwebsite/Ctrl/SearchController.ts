@@ -1,7 +1,12 @@
 ﻿app.controller('SearchController', function ($scope, $http, $location, apiService, $timeout)
 {
+    //Data Models
     $scope.text = "";
     $scope.ListResult = [];
+    $scope.Report = new Report(-1, "title...", new SimpleDate(1, 1, 1), "");
+    //Data Models
+
+    //Refreshed the ListResult array with new data 
     $scope.SearchReports = function ()
     {
         $scope.ListResult = [];
@@ -18,12 +23,17 @@
             function (response) { alert("Error occurred !") }//Error Event
         );
     }
-    $scope.Report = new Report(-1,"title...", new SimpleDate(1, 1, 1), "");
+    
+    //Pops a model window
+    //Showing the selected report.
     $scope.ShowReport = function (Id: number)
     {
         let ArrResult = <Report[]>$scope.ListResult;
         $scope.Report = ArrResult.filter(item => item.Id == Id).pop();
+        $("#text").html($scope.Report.Content);
     }
+
+    //Navigates to View Report Page
     $scope.ViewReport = function ()
     {
         $("#cls").click();

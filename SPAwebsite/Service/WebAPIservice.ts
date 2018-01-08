@@ -54,8 +54,5 @@
 
 
 
-//$http.get("http://localhost:61360/api/").then(
-//    function (response) { },//Success Event
-//    function (response) { }//Error Event
-//);
+
 

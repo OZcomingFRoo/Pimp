@@ -1,7 +1,14 @@
 ﻿app.controller('ListReportTagController', function ($scope, apiService)
 {
+    //data models
     $scope.data = [];
     $scope.List = [];
+    $scope.Day = NaN;
+    $scope.Month = NaN;
+    $scope.Year = NaN;
+    //data models
+
+    //Loads $scope.data with all ReportTags (Id, date and title).
     apiService.GetListOfTagReportId().then(
         function (response) {
             var data: ReportTag[] = [];
@@ -21,10 +28,9 @@
             alert("Error occured");
         }//Error Event
     );
-    $scope.Day = NaN;
-    $scope.Month = NaN;
-    $scope.Year = NaN;
 
+    //This was the replacement of Filter "dateFilter". 
+    //saerches for the relevent Report given by date and title
     $scope.Search = function ()
     {
         let FilterList = $scope.data;

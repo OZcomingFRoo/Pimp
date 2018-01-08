@@ -1,2 +1,2 @@
-var app = angular.module("pimpApp", ["ngRoute", "ngSanitize"]);
+var app = angular.module("pimpApp", ["ngRoute"]);
 //# sourceMappingURL=globalVar.js.map

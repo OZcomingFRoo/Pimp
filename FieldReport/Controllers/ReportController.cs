@@ -50,14 +50,14 @@ namespace FieldReport.Controllers
                 return Ok(data);
             else
                 return NotFound();
-        }
+        }//Gets relevent report by Id (renders content string to fit with 'p' tag)
 
         [HttpGet]
         public IHttpActionResult LastReport()
         {
             var LR = DbFunctions.LastReport();
             return Ok(LR);
-        }
+        }//Get last report that was post
 
         [HttpGet]
         public IHttpActionResult SearchByWords( [FromUri]string words )
@@ -69,7 +69,7 @@ namespace FieldReport.Controllers
             }
             else
                 return BadRequest("Please insert a key words !");
-        }
+        }//Gets a collection of Reports that contian these words on Title and its content
 
         [HttpDelete]
         public IHttpActionResult DeleteReport([FromUri]int Id)
@@ -78,7 +78,7 @@ namespace FieldReport.Controllers
                 return Ok("Successfully deleted report");
             else
                 return NotFound();
-        }
+        }//Delete's the specified by Id
 
         [HttpGet]
         public IHttpActionResult OpenReportForEdit([FromUri]int Id)
@@ -88,11 +88,11 @@ namespace FieldReport.Controllers
                 return Ok(report);
             else
                 return NotFound();
-        }
+        }//Gets relevent report by Id (renders content string to fit with 'textarea' tag) 
 
         [HttpPut]
         [ModelFilter]
-        public IHttpActionResult SaveChangesForReport([FromBody] FieldReportDoc UpdatedReport)
+        public IHttpActionResult SaveChangesForReport([FromBody] FieldReportDoc UpdatedReport)//Updates the relevent report with new values
         {
             int id = DbFunctions.UpdateReport(UpdatedReport);
             return Ok(id);

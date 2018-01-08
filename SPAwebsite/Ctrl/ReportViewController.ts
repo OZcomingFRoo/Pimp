@@ -1,11 +1,18 @@
 ﻿app.controller('ReportViewController', function ($scope, apiService, $routeParams, $timeout, $location)
 {
+    //Data models
     $scope.ID = <number>$routeParams.Id;
     $scope.Report = new Report(-1, "title...", new SimpleDate(11, 11, 11), "Text...");
+    //Data models
+
+    //Navigates to the Report Editor page
     $scope.EditReport = function ()
     {
         $location.path("/EditReport/" + $scope.ID);
     }
+
+    //Deletes report
+    //Redirects back to list
     $scope.DeleteReport = function ()
     {
         var DeleteSuccessed;
@@ -19,6 +26,7 @@
         
     }
 
+    //load data model , $scope.Report , with the relevent Report
     apiService.GetReport($scope.ID).then(
         function (response) {
             if (response.status == 200)

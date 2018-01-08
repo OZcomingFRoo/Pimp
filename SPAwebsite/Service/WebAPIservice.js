@@ -35,8 +35,4 @@ app.service('apiService', function ($http) {
         return $http.put("http://localhost:61360/api/Report/Update", body);
     };
 });
-//$http.get("http://localhost:61360/api/").then(
-//    function (response) { },//Success Event
-//    function (response) { }//Error Event
-//);
 //# sourceMappingURL=WebAPIservice.js.map

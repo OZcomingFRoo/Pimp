@@ -149,7 +149,7 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ReportController.cs" />
-    <Compile Include="DataBase\DbFunctions.cs" />
+    <Compile Include="Db manipulation Functions\DbFunctions.cs" />
     <Compile Include="FieldReport.cs">
       <DependentUpon>FieldReportDB.tt</DependentUpon>
     </Compile>

@@ -32,7 +32,6 @@
     <TypeScriptCompile Include="Ctrl\ListReportTagController.ts" />
     <TypeScriptCompile Include="Ctrl\ReportViewController.ts" />
     <TypeScriptCompile Include="Ctrl\SearchController.ts" />
-    <Content Include="JScommonLibraries\NgSanitize.js" />
     <Content Include="Views\About.html" />
     <Content Include="Views\Home.html" />
     <Content Include="Views\ReportView.html" />
@@ -44,7 +43,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
     <TypeScriptCompile Include="Ctrl\HomeController.ts" />
-    <TypeScriptCompile Include="Ctrl\WriteReport.ts" />
+    <TypeScriptCompile Include="Ctrl\WriteReportController.ts" />
     <TypeScriptCompile Include="Directives\navDirective.ts" />
     <TypeScriptCompile Include="Filters\dateFilter.ts" />
     <TypeScriptCompile Include="globalVar.ts" />

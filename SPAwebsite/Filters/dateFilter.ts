@@ -7,7 +7,7 @@
 - Possible Solutions : from what I researched you need to create a shallow copy of filtered object.
   Did not help in my situation
 
-- why do I keep this "obsolete code"?: To show the limitation of AngularJS which is probably not support
+- why do I keep this unused code?: To show the limitation of AngularJS which is probably not support
   as the new Angular version.
 
 */
